@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clínica Estímulos | Desenvolvimento Infantil</title>
   <meta name="description" content="Clínica em Bauru especializada em desenvolvimento infantil, TDAH, TEA e aprendizagem. Atendimento multidisciplinar com foco no bem-estar." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -17,7 +18,12 @@
       <a href="#home" class="brand" aria-label="Clínica Estímulos">
         <img src="images/logo.png" alt="Clínica Estímulos" class="logo" />
       </a>
-      <nav class="main-nav" aria-label="Principal">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Abrir menu principal">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-menu" class="main-nav" aria-label="Principal">
         <a class="active" href="#home">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
@@ -25,7 +31,7 @@
         <a href="#informacoes">Informações</a>
         <a href="#contato">Contato</a>
       </nav>
-      <a class="btn-primary header-cta" href="https://wa.me/5514997337536" target="_blank" rel="noreferrer">
+      <a class="btn-primary header-cta" href="https://wa.me/5514988089163" target="_blank" rel="noreferrer">
         <span class="btn-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" role="img"><path d="M7 2.75A2.75 2.75 0 0 0 4.25 5.5v13A2.75 2.75 0 0 0 7 21.25h10a2.75 2.75 0 0 0 2.75-2.75v-13A2.75 2.75 0 0 0 17 2.75H7Zm0 1.5h10c.69 0 1.25.56 1.25 1.25v13c0 .69-.56 1.25-1.25 1.25H7c-.69 0-1.25-.56-1.25-1.25v-13c0-.69.56-1.25 1.25-1.25Zm1.25 3a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5h-7.5Zm0 4a.75.75 0 0 0 0 1.5h3.5a.75.75 0 0 0 0-1.5h-3.5Z" /></svg>
         </span>
@@ -45,7 +51,7 @@
             crianças e adolescentes.
           </p>
           <div class="hero-actions">
-            <a href="https://wa.me/5514997337536" class="btn-primary btn-whatsapp" target="_blank" rel="noreferrer">
+            <a href="https://wa.me/5514988089163" class="btn-primary btn-whatsapp" target="_blank" rel="noreferrer">
               <span class="btn-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" role="img"><path d="M19.05 4.94A9.86 9.86 0 0 0 12.03 2C6.57 2 2.13 6.44 2.13 11.9c0 1.75.46 3.46 1.34 4.98L2 22l5.28-1.38a9.87 9.87 0 0 0 4.73 1.2h.01c5.45 0 9.89-4.44 9.89-9.9 0-2.64-1.03-5.12-2.86-6.98Zm-7.02 15.2h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.53 3.69-8.22 8.23-8.22 2.2 0 4.26.85 5.81 2.42a8.16 8.16 0 0 1 2.4 5.82c0 4.54-3.69 8.22-8.2 8.22Zm4.5-6.17c-.25-.12-1.49-.74-1.72-.83-.23-.08-.4-.12-.56.12-.17.25-.65.83-.8 1-.15.17-.3.19-.55.06-.25-.12-1.06-.39-2.03-1.26-.75-.67-1.26-1.5-1.4-1.75-.14-.25-.02-.38.1-.5.11-.11.25-.3.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.84-.2-.49-.4-.42-.56-.43h-.48c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2s.86 2.31.98 2.47c.12.17 1.69 2.57 4.1 3.6.57.25 1.02.4 1.36.52.57.18 1.08.16 1.49.1.45-.07 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.11-.23-.17-.48-.29Z" /></svg>
               </span>
@@ -152,5 +158,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
