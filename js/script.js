@@ -74,8 +74,14 @@ if (siteHeader && navToggle && mainNav) {
 		}
 	});
 
+	const updateFloatingState = () => {
+		siteHeader.classList.toggle('is-floating', window.scrollY > 0);
+	};
+
 	window.addEventListener('scroll', updateActiveLinkFromScroll, { passive: true });
+	window.addEventListener('scroll', updateFloatingState, { passive: true });
 	window.addEventListener('hashchange', updateActiveLinkFromScroll);
 
 	updateActiveLinkFromScroll();
+	updateFloatingState();
 }
