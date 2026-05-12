@@ -1369,3 +1369,121 @@ body.lightbox-open {
     bottom: 16px;
   }
 }
+
+/* Identidade Corporativa Page Styles */
+.corporate-identity {
+  padding-top: 0;
+}
+
+.identity-items-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+.identity-item {
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(36, 69, 116, 0.04);
+}
+
+.identity-title {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--blue);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.identity-text {
+  font-size: 15px;
+  line-height: 1.62;
+  color: var(--text);
+}
+
+.identity-section {
+  margin-top: 48px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 22px rgba(36, 69, 116, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(36, 69, 116, 0.12);
+}
+
+.value-card h4 {
+  font-size: 16px;
+  line-height: 1.3;
+  color: var(--blue);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.value-card p {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #49576a;
+}
+
+@media (max-width: 1024px) {
+  .identity-items-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .identity-items-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .identity-item {
+    padding: 20px;
+  }
+
+  .identity-title {
+    font-size: 18px;
+  }
+
+  .identity-text {
+    font-size: 14px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .value-card {
+    padding: 20px;
+  }
+
+  .value-card h4 {
+    font-size: 15px;
+  }
+
+  .value-card p {
+    font-size: 13px;
+  }
+}
