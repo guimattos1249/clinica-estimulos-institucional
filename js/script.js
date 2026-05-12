@@ -176,3 +176,32 @@ if (galleryRoot && lightbox) {
 		}
 	});
 }
+
+const createScrollTopFab = () => {
+	const fabButton = document.createElement('button');
+	fabButton.type = 'button';
+	fabButton.className = 'scroll-top-fab';
+	fabButton.setAttribute('aria-label', 'Voltar ao topo da página');
+	fabButton.setAttribute('title', 'Voltar ao topo');
+	fabButton.innerHTML = '<svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 5.5 5.8 11.7a1 1 0 1 0 1.4 1.4l3.8-3.8V18a1 1 0 1 0 2 0V9.3l3.8 3.8a1 1 0 0 0 1.4-1.4L12 5.5Z" /></svg>';
+	document.body.appendChild(fabButton);
+
+	const toggleFabVisibility = () => {
+		const shouldShow = window.scrollY > 320;
+		fabButton.classList.toggle('is-visible', shouldShow);
+	};
+
+	fabButton.addEventListener('click', () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	});
+
+	window.addEventListener('scroll', toggleFabVisibility, { passive: true });
+	toggleFabVisibility();
+};
+
+if (document.body) {
+	createScrollTopFab();
+}

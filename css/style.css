@@ -1211,3 +1211,53 @@ body.lightbox-open {
     grid-template-columns: 1fr;
   }
 }
+
+/* Scroll to Top FAB */
+.scroll-top-fab {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 40;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(41, 87, 148, 0.34);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.scroll-top-fab.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top-fab:hover {
+  background: var(--blue-dark);
+}
+
+.scroll-top-fab:focus-visible {
+  outline: 3px solid #8fb2ea;
+  outline-offset: 2px;
+}
+
+.scroll-top-fab svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+@media (max-width: 720px) {
+  .scroll-top-fab {
+    right: 16px;
+    bottom: 16px;
+  }
+}
