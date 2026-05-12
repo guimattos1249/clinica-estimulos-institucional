@@ -8,6 +8,7 @@
     {
       "id": 1,
       "nome": "Verônica Bulgarelli",
+      "imagem": "images/profissionais/veronica-bulgarelli.jfif",
       "especialidade": "Psicopedagogia e Neuropsicopedagogia Clínica",
       "descricao": "Psicopedagoga e Neuropsicopedagoga Clínica com sólida experiência na área da educação e no atendimento clínico",
       "atuacao": [
@@ -34,6 +35,7 @@
     {
       "id": 2,
       "nome": "Wanessa Cavaglieri",
+      "imagem": "images/profissionais/wanessa-cavaglieri.jfif",
       "especialidade": "Psicopedagogia",
       "descricao": "Psicopedagoga com experiência no acompanhamento de crianças com dificuldades de aprendizagem",
       "atuacao": [
@@ -54,6 +56,7 @@
     {
       "id": 3,
       "nome": "Dra. Angélica Trassi",
+      "imagem": "images/profissionais/angelica-trassi.jfif",
       "especialidade": "Psicologia Clínica e Neuropsicologia",
       "descricao": "Psicóloga que realiza atendimento de crianças, adolescentes e adultos",
       "formacao": [
@@ -78,6 +81,7 @@
     {
       "id": 4,
       "nome": "Bárbara Duarte",
+      "imagem": "images/profissionais/barbara-duarte.jfif",
       "especialidade": "Psicanálise Infantil e Adolescente",
       "descricao": "Psicóloga Clínica com abordagem Psicanalítica",
       "atuacao": [
@@ -98,6 +102,7 @@
     {
       "id": 5,
       "nome": "Juliana Haiyashi",
+      "imagem": "images/profissionais/juliana-haiyashi.jfif",
       "especialidade": "Psicologia Clínica Infantil e Neuropsicologia",
       "descricao": "Psicóloga e Neuropsicóloga especializada no atendimento clínico infantil",
       "formacao": [
@@ -129,6 +134,7 @@
     {
       "id": 6,
       "nome": "Profa. Dra. Shaday Prudenciatti",
+      "imagem": "images/profissionais/shaday-prudenciatti.jfif",
       "especialidade": "Neuropsicologia Clínica e Psicologia",
       "descricao": "Neuropsicóloga e Psicóloga com sólida formação acadêmica e experiência clínica",
       "formacao": [
@@ -156,6 +162,7 @@
     {
       "id": 7,
       "nome": "Nayara Batagini",
+      "imagem": "images/profissionais/nayara-batagini.jfif",
       "especialidade": "Terapia Ocupacional",
       "descricao": "Terapeuta Ocupacional com atuação focada em aprendizagem e desenvolvimento infantojuvenil",
       "formacao": [
@@ -182,6 +189,7 @@
     {
       "id": 8,
       "nome": "Maria Carolina",
+      "imagem": "images/profissionais/maria-carolina.jpeg",
       "especialidade": "Terapia Ocupacional",
       "descricao": "Terapeuta Ocupacional com grande experiência na área",
       "atuacao": [
@@ -199,6 +207,7 @@
     {
       "id": 9,
       "nome": "Celi Nunes",
+      "imagem": "images/profissionais/celi-nunes.jfif",
       "especialidade": "Psicomotricidade",
       "descricao": "Profissional de Educação Física e Psicomotricista com ampla experiência no desenvolvimento infantil",
       "formacao": [
@@ -221,6 +230,7 @@
     {
       "id": 10,
       "nome": "Vanessa Santi Ceolin",
+      "imagem": "images/profissionais/vanessa-santi-ceolin.jfif",
       "especialidade": "Nutrição Infantil",
       "descricao": "Nutricionista com atuação voltada às necessidades específicas de crianças e adolescentes",
       "atuacao": [
@@ -248,6 +258,7 @@
     {
       "id": 11,
       "nome": "Sandra Furquim",
+      "imagem": "images/profissionais/sandra-furquim.jfif",
       "especialidade": "Musicoterapia",
       "descricao": "Musicoterapeuta Clínica com formação sólida e especializações diversas",
       "formacao": [
@@ -279,6 +290,7 @@
     {
       "id": 12,
       "nome": "Edvaldo",
+      "imagem": "images/profissionais/edvaldo.jfif",
       "especialidade": "Reforço Escolar - Matemática",
       "descricao": "Professor com atuação em educação e participação em projetos de pesquisa na área de aprendizagem",
       "formacao": [
@@ -306,6 +318,7 @@
     {
       "id": 13,
       "nome": "Lígia Serrano",
+      "imagem": "images/profissionais/ligia-serrano.jpeg",
       "especialidade": "Reforço Escolar - Português",
       "descricao": "Professora com sólida formação acadêmica e atuação em pesquisa",
       "formacao": [
@@ -334,6 +347,7 @@
     {
       "id": 14,
       "nome": "Caroline Bulgarelli",
+      "imagem": "images/profissionais/caroline-bulgarelli.jfif",
       "especialidade": "Pedagogia - Reforço Pedagógico",
       "descricao": "Pedagoga com vasta experiência no acompanhamento pedagógico de crianças",
       "formacao": [

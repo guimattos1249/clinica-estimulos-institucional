@@ -86,16 +86,24 @@ if (siteHeader && navToggle && mainNav) {
 	updateFloatingState();
 }
 
-const galleryRoot = document.querySelector('.js-space-gallery');
-const lightbox = document.querySelector('.space-lightbox');
+const initializeImageLightbox = ({ gallerySelector, lightboxSelector, triggerSelector, imageSelector }) => {
+	const galleryRoot = document.querySelector(gallerySelector);
+	const lightbox = document.querySelector(lightboxSelector);
 
-if (galleryRoot && lightbox) {
-	const galleryItems = Array.from(galleryRoot.querySelectorAll('img'));
+	if (!galleryRoot || !lightbox) {
+		return;
+	}
+
+	const galleryItems = Array.from(galleryRoot.querySelectorAll(imageSelector));
 	const lightboxImage = lightbox.querySelector('.space-lightbox-image');
 	const lightboxCaption = lightbox.querySelector('.space-lightbox-caption');
 	const closeButton = lightbox.querySelector('.space-lightbox-close');
 	const prevButton = lightbox.querySelector('.space-lightbox-nav.prev');
 	const nextButton = lightbox.querySelector('.space-lightbox-nav.next');
+
+	if (galleryItems.length === 0 || !lightboxImage || !lightboxCaption) {
+		return;
+	}
 
 	let currentIndex = 0;
 
@@ -105,8 +113,8 @@ if (galleryRoot && lightbox) {
 
 		currentIndex = safeIndex;
 		lightboxImage.src = currentImage.getAttribute('src') || '';
-		lightboxImage.alt = currentImage.getAttribute('alt') || 'Imagem da galeria';
-		lightboxCaption.textContent = `${safeIndex + 1} de ${galleryItems.length}`;
+		lightboxImage.alt = currentImage.getAttribute('alt') || 'Imagem ampliada';
+		lightboxCaption.textContent = currentImage.getAttribute('alt') || `${safeIndex + 1} de ${galleryItems.length}`;
 	};
 
 	const openLightbox = (index) => {
@@ -123,23 +131,26 @@ if (galleryRoot && lightbox) {
 	};
 
 	galleryItems.forEach((image, index) => {
-		const card = image.closest('.space-gallery-item');
-		if (card) {
-			card.setAttribute('role', 'button');
-			card.setAttribute('tabindex', '0');
-			card.setAttribute('aria-label', `Ampliar ${image.alt || `imagem ${index + 1}`}`);
-
-			card.addEventListener('click', () => {
-				openLightbox(index);
-			});
-
-			card.addEventListener('keydown', (event) => {
-				if (event.key === 'Enter' || event.key === ' ') {
-					event.preventDefault();
-					openLightbox(index);
-				}
-			});
+		const trigger = image.closest(triggerSelector);
+		if (!trigger) {
+			return;
 		}
+
+		if (!trigger.matches('button')) {
+			trigger.setAttribute('role', 'button');
+			trigger.setAttribute('tabindex', '0');
+		}
+
+		trigger.addEventListener('click', () => {
+			openLightbox(index);
+		});
+
+		trigger.addEventListener('keydown', (event) => {
+			if (event.key === 'Enter' || event.key === ' ') {
+				event.preventDefault();
+				openLightbox(index);
+			}
+		});
 	});
 
 	closeButton?.addEventListener('click', closeLightbox);
@@ -175,7 +186,21 @@ if (galleryRoot && lightbox) {
 			renderImage(currentIndex + 1);
 		}
 	});
-}
+};
+
+initializeImageLightbox({
+	gallerySelector: '.js-space-gallery',
+	lightboxSelector: '.space-lightbox:not(.team-lightbox)',
+	triggerSelector: '.space-gallery-item',
+	imageSelector: 'img'
+});
+
+initializeImageLightbox({
+	gallerySelector: '.js-team-gallery',
+	lightboxSelector: '.team-lightbox',
+	triggerSelector: '.team-avatar',
+	imageSelector: '.team-avatar img'
+});
 
 const createScrollTopFab = () => {
 	const fabButton = document.createElement('button');

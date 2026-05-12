@@ -865,24 +865,67 @@ section[id] {
 
 .team-card-header {
   display: flex;
+  align-items: flex-start;
   gap: 14px;
   margin-bottom: 16px;
 }
 
 .team-avatar {
-  flex: 0 0 64px;
-  width: 64px;
-  height: 64px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  color: #fff;
+  flex: 0 0 84px;
+  width: 84px;
+  height: 84px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  background: #e8eef8;
+  cursor: zoom-in;
+  box-shadow: 0 10px 22px rgba(36, 69, 116, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.team-avatar svg {
-  width: 32px;
-  height: 32px;
-  fill: currentColor;
+.team-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.team-avatar img .team-avatar-photo-nayara {
+  object-position: 50% 30%;
+}
+
+.team-avatar:hover,
+.team-avatar:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(36, 69, 116, 0.16);
+}
+
+.team-avatar:hover img,
+.team-avatar:focus-visible img {
+  transform: scale(1.04);
+  filter: saturate(1.04) contrast(1.03);
+}
+
+.team-avatar:focus-visible {
+  outline: 3px solid #84a7dd;
+  outline-offset: 3px;
+}
+
+.team-avatar-placeholder {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #dbe7fb 0%, #a8c2ea 100%);
+  color: var(--blue);
+  cursor: default;
+}
+
+.team-avatar-placeholder span {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
 .team-info-header {
@@ -995,13 +1038,9 @@ section[id] {
   }
 
   .team-avatar {
-    width: 56px;
-    height: 56px;
-  }
-
-  .team-avatar svg {
-    width: 28px;
-    height: 28px;
+    width: 72px;
+    height: 72px;
+    flex-basis: 72px;
   }
 
   .team-card h3 {
