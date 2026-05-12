@@ -1,0 +1,386 @@
+{
+  "clinica": "Clínica Estímulos - Bauru",
+  "contato": {
+    "whatsapp": "https://wa.me/5514988089163",
+    "telefone": "(14) 98808-9163"
+  },
+  "profissionais": [
+    {
+      "id": 1,
+      "nome": "Verônica Bulgarelli",
+      "especialidade": "Psicopedagogia e Neuropsicopedagogia Clínica",
+      "descricao": "Psicopedagoga e Neuropsicopedagoga Clínica com sólida experiência na área da educação e no atendimento clínico",
+      "atuacao": [
+        "Identificação e intervenção em dificuldades de aprendizagem",
+        "Desenvolvimento cognitivo",
+        "Questões comportamentais",
+        "Atendimento de crianças, adolescentes e adultos"
+      ],
+      "competencias": [
+        "Conhecimento pedagógico, clínico e neurocientífico",
+        "Avaliações completas",
+        "Intervenções personalizadas",
+        "Estratégias de aprendizagem",
+        "Orientação familiar e escolar",
+        "Acompanhamento contínuo"
+      ],
+      "areas_atendimento": [
+        "TDAH",
+        "TEA",
+        "Intervenções baseadas em ABA",
+        "Educação inclusiva"
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Wanessa Cavaglieri",
+      "especialidade": "Psicopedagogia",
+      "descricao": "Psicopedagoga com experiência no acompanhamento de crianças com dificuldades de aprendizagem",
+      "atuacao": [
+        "Acompanhamento de crianças com dificuldades de aprendizagem",
+        "Investigação de como a criança aprende",
+        "Identificação de obstáculos no processo de alfabetização",
+        "Acompanhamento individualizado"
+      ],
+      "competencias": [
+        "Psicopedagogia",
+        "Reforço escolar",
+        "Dificuldades em leitura, escrita, atenção e organização dos estudos",
+        "Fortalecimento de autoestima",
+        "Trabalho multidisciplinar"
+      ],
+      "metodologia": "Acompanhamento personalizado, respeitando o ritmo da criança"
+    },
+    {
+      "id": 3,
+      "nome": "Dra. Angélica Trassi",
+      "especialidade": "Psicologia Clínica e Neuropsicologia",
+      "descricao": "Psicóloga que realiza atendimento de crianças, adolescentes e adultos",
+      "formacao": [
+        "Psicóloga Clínica",
+        "Especialista em Análise do Comportamento",
+        "Especialista em Terapia de Aceitação e Compromisso (ACT)"
+      ],
+      "atuacao": [
+        "Atendimento psicológico infantil",
+        "Atendimento de adolescentes e adultos",
+        "Avaliação neuropsicológica",
+        "Dificuldades de aprendizagem"
+      ],
+      "competencias": [
+        "Análise do Comportamento",
+        "Terapia de Aceitação e Compromisso (ACT)",
+        "Desenvolvimento emocional",
+        "Avaliação psicológica",
+        "Habilidades cognitivas"
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Bárbara Duarte",
+      "especialidade": "Psicanálise Infantil e Adolescente",
+      "descricao": "Psicóloga Clínica com abordagem Psicanalítica",
+      "atuacao": [
+        "Atendimento psicanalítico de crianças",
+        "Atendimento psicanalítico de adolescentes",
+        "Escuta qualificada",
+        "Cuidado emocional"
+      ],
+      "competencias": [
+        "Psicanálise infantil",
+        "Psicanálise adolescente",
+        "Desenvolvimento emocional, social e escolar",
+        "Identificação de potencialidades",
+        "Trabalho integrado multidisciplinar"
+      ],
+      "abordagem": "Escuta sensível, acolhimento e cuidado emocional"
+    },
+    {
+      "id": 5,
+      "nome": "Juliana Haiyashi",
+      "especialidade": "Psicologia Clínica Infantil e Neuropsicologia",
+      "descricao": "Psicóloga e Neuropsicóloga especializada no atendimento clínico infantil",
+      "formacao": [
+        "Psicóloga",
+        "Neuropsicóloga",
+        "Especializada em atendimento clínico infantil"
+      ],
+      "atuacao": [
+        "Acompanhamento do desenvolvimento emocional, comportamental e cognitivo",
+        "Atendimento de crianças e adolescentes",
+        "Atendimento presencial e online"
+      ],
+      "competencias": [
+        "Escuta sensível",
+        "Base teórica sólida",
+        "Intervenções clínicas fundamentadas",
+        "Avaliação clínica infantil",
+        "Acompanhamento terapêutico",
+        "Intervenção emocional e comportamental",
+        "Orientação parental"
+      ],
+      "atua_com": [
+        "Sinais de dificuldade emocional",
+        "Desafios comportamentais",
+        "Dificuldades de aprendizagem",
+        "Desafios nas relações sociais"
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Profa. Dra. Shaday Prudenciatti",
+      "especialidade": "Neuropsicologia Clínica e Psicologia",
+      "descricao": "Neuropsicóloga e Psicóloga com sólida formação acadêmica e experiência clínica",
+      "formacao": [
+        "Mestre e Doutora em Neurociências pela USP",
+        "Especialista em Psicologia Clínica e Hospitalar (HRAC-USP)",
+        "Especialista em Neuropsicologia Clínica (IPECS)"
+      ],
+      "atuacao": [
+        "Avaliação e intervenção neuropsicológica",
+        "Atendimento baseado em evidências científicas",
+        "Atendimento de crianças, adolescentes e adultos"
+      ],
+      "experiencia_academica": [
+        "Diretora das Faculdades Integradas de Jaú (FIJ)",
+        "Docente do curso de Psicologia",
+        "Professora em programas de pós-graduação em Saúde e Educação"
+      ],
+      "foco": [
+        "Neurodesenvolvimento",
+        "Aprendizagem",
+        "Saúde mental",
+        "Acompanhamento ético, humanizado e tecnicamente qualificado"
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Nayara Batagini",
+      "especialidade": "Terapia Ocupacional",
+      "descricao": "Terapeuta Ocupacional com atuação focada em aprendizagem e desenvolvimento infantojuvenil",
+      "formacao": [
+        "Terapeuta Ocupacional",
+        "Certificação Internacional em Integração Sensorial de Ayres (CLASI)",
+        "Especialização em Análise do Comportamento Aplicada (ABA)",
+        "Formação em Estimulação e Reabilitação Visual Precoce"
+      ],
+      "competencias": [
+        "Intervenções individualizadas",
+        "Desafios motores",
+        "Desafios sensoriais",
+        "Desafios comportamentais",
+        "Desafios de aprendizagem"
+      ],
+      "favorece": [
+        "Atenção",
+        "Organização sensorial",
+        "Coordenação",
+        "Autonomia nas atividades diárias",
+        "Participação social"
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Maria Carolina",
+      "especialidade": "Terapia Ocupacional",
+      "descricao": "Terapeuta Ocupacional com grande experiência na área",
+      "atuacao": [
+        "Acompanhamento individualizado",
+        "Atendimento multidisciplinar integrado"
+      ],
+      "metodologia": "Atividades lúdicas, planejadas e significativas",
+      "estimula": [
+        "Desenvolvimento motor",
+        "Desenvolvimento sensorial",
+        "Desenvolvimento cognitivo",
+        "Desenvolvimento emocional"
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Celi Nunes",
+      "especialidade": "Psicomotricidade",
+      "descricao": "Profissional de Educação Física e Psicomotricista com ampla experiência no desenvolvimento infantil",
+      "formacao": [
+        "Educação Física",
+        "Psicomotricidade"
+      ],
+      "atuacao": [
+        "Atividades psicomotoras",
+        "Desenvolvimento infantil"
+      ],
+      "favorece": [
+        "Coordenação",
+        "Atenção",
+        "Equilíbrio",
+        "Organização corporal",
+        "Autonomia",
+        "Segurança e bem-estar"
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Vanessa Santi Ceolin",
+      "especialidade": "Nutrição Infantil",
+      "descricao": "Nutricionista com atuação voltada às necessidades específicas de crianças e adolescentes",
+      "atuacao": [
+        "Acompanhamento nutricional de crianças",
+        "Acompanhamento nutricional de adolescentes",
+        "Atendimento individualizado"
+      ],
+      "atua_com": [
+        "Seletividade alimentar",
+        "Questões sensoriais",
+        "Condições específicas de saúde"
+      ],
+      "considera": [
+        "Rotina familiar",
+        "Preferências alimentares",
+        "Desafios individuais"
+      ],
+      "objetivos": [
+        "Promover hábitos saudáveis",
+        "Maior autonomia",
+        "Bem-estar infantil",
+        "Tranquilidade para as famílias"
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Sandra Furquim",
+      "especialidade": "Musicoterapia",
+      "descricao": "Musicoterapeuta Clínica com formação sólida e especializações diversas",
+      "formacao": [
+        "Musicoterapeuta Clínica",
+        "Especialização em Análise do Comportamento (ABA)",
+        "Especialização em Neuropsicopedagogia",
+        "Especialização em Educação Especial",
+        "Especialização em Musicoterapia em Neurologia"
+      ],
+      "atuacao": [
+        "Desenvolvimento da comunicação",
+        "Desenvolvimento de atenção",
+        "Interação social",
+        "Regulação emocional"
+      ],
+      "especialista_em": [
+        "Dificuldades de aprendizagem",
+        "Atrasos no desenvolvimento",
+        "Transtorno do Espectro Autista (TEA)"
+      ],
+      "contribui_para": [
+        "Melhorar atenção",
+        "Melhorar comunicação",
+        "Fortalecer vínculos",
+        "Expressão emocional",
+        "Participação nas atividades do dia a dia"
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Edvaldo",
+      "especialidade": "Reforço Escolar - Matemática",
+      "descricao": "Professor com atuação em educação e participação em projetos de pesquisa na área de aprendizagem",
+      "formacao": [
+        "Professor",
+        "Experiência em educação",
+        "Participação em projetos de pesquisa"
+      ],
+      "atuacao": [
+        "Reforço escolar em matemática",
+        "Atendimento individualizado"
+      ],
+      "foco": [
+        "Raciocínio lógico",
+        "Compreensão dos conteúdos",
+        "Construção de base sólida em matemática",
+        "Desenvolvimento de segurança e autonomia"
+      ],
+      "trabalha_com": [
+        "Cálculos",
+        "Interpretação de problemas",
+        "Organização dos estudos",
+        "Baixo rendimento escolar"
+      ]
+    },
+    {
+      "id": 13,
+      "nome": "Lígia Serrano",
+      "especialidade": "Reforço Escolar - Português",
+      "descricao": "Professora com sólida formação acadêmica e atuação em pesquisa",
+      "formacao": [
+        "Sólida formação acadêmica",
+        "Atuação em pesquisa na área da educação",
+        "Especialização em educação inclusiva"
+      ],
+      "atuacao": [
+        "Reforço escolar em português",
+        "Atendimento individualizado"
+      ],
+      "foco": [
+        "Desenvolvimento da leitura",
+        "Desenvolvimento da escrita",
+        "Interpretação de textos",
+        "Organização do pensamento"
+      ],
+      "trabalha_com": [
+        "Dificuldades em leitura",
+        "Dificuldades em escrita",
+        "Erros na escrita",
+        "Baixa compreensão de textos",
+        "Insegurança na produção escolar"
+      ]
+    },
+    {
+      "id": 14,
+      "nome": "Caroline Bulgarelli",
+      "especialidade": "Pedagogia - Reforço Pedagógico",
+      "descricao": "Pedagoga com vasta experiência no acompanhamento pedagógico de crianças",
+      "formacao": [
+        "Pedagoga",
+        "Vasta experiência em desenvolvimento infantil"
+      ],
+      "atuacao": [
+        "Acompanhamento pedagógico",
+        "Reforço pedagógico",
+        "Fortalecimento da aprendizagem",
+        "Desenvolvimento da autonomia escolar"
+      ],
+      "oferece": [
+        "Recuperação de conteúdos de leitura e escrita de forma clara e gradual",
+        "Organização de estudos e tarefas com eficiência",
+        "Redução de insegurança, medo e frustração escolar",
+        "Desenvolvimento de hábitos que fortalecem o desempenho a longo prazo"
+      ],
+      "abordagem": "Vai além do conteúdo - reconstrução da segurança emocional, autoestima e prazer em aprender"
+    }
+  ],
+  "servicos_principais": [
+    "Psicopedagogia e Neuropsicopedagogia",
+    "Psicologia Clínica",
+    "Psicanálise Infantil e Adolescente",
+    "Neuropsicologia",
+    "Terapia Ocupacional",
+    "Psicomotricidade",
+    "Nutrição Infantil",
+    "Musicoterapia",
+    "Reforço Escolar (Matemática, Português, Pedagogia)",
+    "Avaliações especializadas",
+    "Orientação familiar e escolar"
+  ],
+  "atendimentos_especializados": [
+    "TDAH",
+    "Transtorno do Espectro Autista (TEA)",
+    "Dificuldades de aprendizagem",
+    "Atrasos no desenvolvimento",
+    "Educação Inclusiva",
+    "Integração Sensorial",
+    "Análise do Comportamento Aplicada (ABA)",
+    "Estimulação e Reabilitação Visual Precoce"
+  ],
+  "formato_atendimento": [
+    "Presencial em Bauru",
+    "Online",
+    "Atendimento multidisciplinar integrado"
+  ]
+}

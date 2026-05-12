@@ -303,8 +303,8 @@ section[id] {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .service-card {
@@ -803,5 +803,212 @@ section[id] {
 
   .footer-bottom-inner p {
     max-width: 300px;
+  }
+}
+
+/* Team Page Styles */
+.hero-secondary {
+  padding: 52px 0 42px;
+}
+
+.hero-grid-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-copy-secondary {
+  max-width: 720px;
+}
+
+.hero-copy-secondary h1 {
+  font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  line-height: 1;
+  color: var(--blue);
+  letter-spacing: -0.045em;
+  margin-bottom: 20px;
+}
+
+.hero-copy-secondary p {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #334257;
+  max-width: 600px;
+}
+
+.team {
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 22px rgba(36, 69, 116, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(36, 69, 116, 0.12);
+}
+
+.team-card-header {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.team-avatar {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.team-avatar svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.team-info-header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.team-specialty {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5972a8;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 4px 0 0 0 !important;
+}
+
+.team-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-description {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #49576a;
+  margin-bottom: 12px;
+}
+
+.team-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  background: #edf4ff;
+  color: #3869ad;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Avatar Gradients */
+.blue-gradient { background: linear-gradient(135deg, #5b9ae3 0%, #3869ad 100%); }
+.green-gradient { background: linear-gradient(135deg, #7ab85c 0%, #568749 100%); }
+.lilac-gradient { background: linear-gradient(135deg, #8b79b8 0%, #61589c 100%); }
+.yellow-gradient { background: linear-gradient(135deg, #f5c74d 0%, #d38d1c 100%); }
+.peach-gradient { background: linear-gradient(135deg, #f5b5a1 0%, #cb7b54 100%); }
+.mint-gradient { background: linear-gradient(135deg, #69b87a 0%, #4d9065 100%); }
+.coral-gradient { background: linear-gradient(135deg, #e68a5f 0%, #da5f3b 100%); }
+.sky-gradient { background: linear-gradient(135deg, #7da6e3 0%, #4e7cc8 100%); }
+.pink-gradient { background: linear-gradient(135deg, #e088bb 0%, #b94b8a 100%); }
+
+@media (max-width: 1180px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .hero-grid-secondary {
+    padding: 0;
+  }
+
+  .hero-copy-secondary h1 {
+    font-size: 2.5rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .team-card {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-copy-secondary h1 {
+    font-size: 2rem;
+  }
+
+  .hero-copy-secondary p {
+    font-size: 16px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card-header {
+    gap: 12px;
+  }
+
+  .team-avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .team-avatar svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .team-card h3 {
+    font-size: 15px;
+  }
+
+  .team-description {
+    font-size: 13px;
   }
 }
