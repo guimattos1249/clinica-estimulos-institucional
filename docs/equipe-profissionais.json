@@ -22,6 +22,7 @@
         "Avaliações completas",
         "Intervenções personalizadas",
         "Estratégias de aprendizagem",
+        "Alfabetização",
         "Orientação familiar e escolar",
         "Acompanhamento contínuo"
       ],
@@ -46,7 +47,7 @@
       ],
       "competencias": [
         "Psicopedagogia",
-        "Reforço escolar",
+        "Dificuldades de aprendizagem",
         "Dificuldades em leitura, escrita, atenção e organização dos estudos",
         "Fortalecimento de autoestima",
         "Trabalho multidisciplinar"
@@ -192,6 +193,18 @@
       "imagem": "images/profissionais/maria-carolina.jpeg",
       "especialidade": "Terapia Ocupacional",
       "descricao": "Terapeuta Ocupacional com grande experiência na área",
+      "formacao": [
+        "Graduação em Terapia Ocupacional – USC/Bauru (2019)",
+        "Pós-Graduação em Análise do Comportamento Aplicada ao TEA e DI (2022)",
+        "Especialização em ABA"
+      ],
+      "cursos_complementares": [
+        "Seletividade Alimentar – CBI of Miami e Mentoria Pratinho Feliz",
+        "Raciocínio Clínico em Terapia Ocupacional",
+        "Dieta Sensorial",
+        "Acomodação Sensorial Escolar",
+        "Desfralde"
+      ],
       "atuacao": [
         "Acompanhamento individualizado",
         "Atendimento multidisciplinar integrado"

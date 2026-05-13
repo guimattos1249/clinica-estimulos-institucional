@@ -1019,6 +1019,8 @@ section[id] {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin: 4px 0 0 0 !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .team-card-body {
