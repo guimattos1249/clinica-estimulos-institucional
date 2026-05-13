@@ -238,17 +238,67 @@ if (reviewsCarousel) {
 	const dots = document.querySelectorAll('.reviews-dot');
 	const prevBtn = document.getElementById('reviews-prev');
 	const nextBtn = document.getElementById('reviews-next');
+	const cards = reviewsCarousel.querySelectorAll('.review-card');
 	let currentSlide = 0;
+
+	const syncCardHeights = () => {
+		if (!slides.length || !cards.length) {
+			return;
+		}
+
+		reviewsCarousel.classList.add('is-measuring');
+		cards.forEach((card) => {
+			card.style.setProperty('--review-card-height', 'auto');
+		});
+
+		let maxHeight = 0;
+		slides.forEach((slide, slideIndex) => {
+			slides.forEach((item) => item.classList.remove('active'));
+			dots.forEach((dot) => dot.classList.remove('active'));
+			slide.classList.add('active');
+			if (dots[slideIndex]) {
+				dots[slideIndex].classList.add('active');
+			}
+
+			slide.querySelectorAll('.review-card').forEach((card) => {
+				maxHeight = Math.max(maxHeight, card.getBoundingClientRect().height);
+			});
+		});
+
+		slides.forEach((item) => item.classList.remove('active'));
+		dots.forEach((dot) => dot.classList.remove('active'));
+		slides[currentSlide].classList.add('active');
+		if (dots[currentSlide]) {
+			dots[currentSlide].classList.add('active');
+		}
+
+		const fixedHeight = `${Math.ceil(maxHeight)}px`;
+		cards.forEach((card) => {
+			card.style.setProperty('--review-card-height', fixedHeight);
+		});
+
+		reviewsCarousel.classList.remove('is-measuring');
+	};
 
 	const goToSlide = (index) => {
 		slides[currentSlide].classList.remove('active');
-		dots[currentSlide].classList.remove('active');
+		if (dots[currentSlide]) {
+			dots[currentSlide].classList.remove('active');
+		}
 		currentSlide = (index + slides.length) % slides.length;
 		slides[currentSlide].classList.add('active');
-		dots[currentSlide].classList.add('active');
+		if (dots[currentSlide]) {
+			dots[currentSlide].classList.add('active');
+		}
 	};
 
-	prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
-	nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+	if (prevBtn && nextBtn) {
+		prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+		nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+	}
+
 	dots.forEach((dot, i) => dot.addEventListener('click', () => goToSlide(i)));
+
+	syncCardHeights();
+	window.addEventListener('resize', syncCardHeights);
 }
