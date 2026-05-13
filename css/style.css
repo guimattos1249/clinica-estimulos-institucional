@@ -1271,6 +1271,61 @@ section[id] {
   }
 }
 
+/* Reviews Carousel */
+.reviews-slide {
+  display: none;
+}
+.reviews-slide.active {
+  display: grid;
+}
+.reviews-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+.reviews-nav-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  color: var(--blue);
+  transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+.reviews-nav-btn svg {
+  width: 18px;
+  height: 18px;
+}
+.reviews-nav-btn:hover {
+  background: #eef3fb;
+  border-color: var(--blue);
+}
+.reviews-dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.reviews-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: var(--line);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+.reviews-dot.active {
+  background: var(--blue);
+  transform: scale(1.35);
+}
+
 /* Nosso Espaco Page Styles */
 .space-gallery {
   padding-top: 0;

@@ -230,3 +230,25 @@ const createScrollTopFab = () => {
 if (document.body) {
 	createScrollTopFab();
 }
+
+// Reviews Carousel
+const reviewsCarousel = document.querySelector('.reviews-carousel');
+if (reviewsCarousel) {
+	const slides = reviewsCarousel.querySelectorAll('.reviews-slide');
+	const dots = document.querySelectorAll('.reviews-dot');
+	const prevBtn = document.getElementById('reviews-prev');
+	const nextBtn = document.getElementById('reviews-next');
+	let currentSlide = 0;
+
+	const goToSlide = (index) => {
+		slides[currentSlide].classList.remove('active');
+		dots[currentSlide].classList.remove('active');
+		currentSlide = (index + slides.length) % slides.length;
+		slides[currentSlide].classList.add('active');
+		dots[currentSlide].classList.add('active');
+	};
+
+	prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+	nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+	dots.forEach((dot, i) => dot.addEventListener('click', () => goToSlide(i)));
+}
