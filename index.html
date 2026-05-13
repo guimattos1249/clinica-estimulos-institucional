@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clínica Estímulos | Desenvolvimento Infantil</title>
   <meta name="description" content="Clínica em Bauru especializada em desenvolvimento infantil, TDAH, TEA e aprendizagem. Atendimento multidisciplinar com foco no bem-estar." />
-  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="icon" type="image/png" href="utils/images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -16,7 +16,7 @@
   <header class="site-header">
     <div class="container nav">
       <a href="#home" class="brand" aria-label="Clínica Estímulos">
-        <img src="images/logo.png" alt="Clínica Estímulos" class="logo" />
+        <img src="utils/images/logo.png" alt="Clínica Estímulos" class="logo" />
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Abrir menu principal">
         <span></span>
@@ -107,8 +107,51 @@
 
     <section id="sobre" class="about">
       <div class="container about-grid">
-        <div class="about-image-wrap">
-          <img src="https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?auto=format&fit=crop&w=900&q=80" alt="Profissional acompanhando criança em atividade" class="about-image" />
+        <div class="about-image-wrap about-carousel" aria-label="Conteudos da equipe da Clínica Estímulos">
+          <figure class="about-carousel-slide active" data-about-topic="0">
+            <img src="https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?auto=format&fit=crop&w=900&q=80" alt="Profissional acompanhando crianca em atividade" class="about-image" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="about-carousel-slide" data-about-topic="0">
+            <button type="button" class="about-video-thumb" data-open-video-modal data-video-src="utils/atendimentos/atendimento-humanizado.mp4" data-video-title="Vídeo de atendimento humanizado" aria-label="Abrir vídeo de atendimento humanizado em tela ampliada">
+              <video class="about-video about-video-poster" muted playsinline preload="metadata">
+                <source src="utils/atendimentos/atendimento-humanizado.mp4" type="video/mp4" />
+              </video>
+              <span class="about-video-thumb-overlay" aria-hidden="true">
+                <span class="about-video-play-icon"></span>
+                <span class="about-video-thumb-label">Assistir vídeo</span>
+              </span>
+            </button>
+          </figure>
+          <figure class="about-carousel-slide" data-about-topic="1">
+            <img src="utils/images/equipe/equipe-01.jfif" alt="Equipe da Clinica Estímulos reunida em atendimento multidisciplinar" class="about-image" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="about-carousel-slide" data-about-topic="1">
+            <img src="utils/images/equipe/equipe-02.jpg" alt="Equipe multidisciplinar da Clínica Estímulos em atuação integrada" class="about-image" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="about-carousel-slide" data-about-topic="1">
+            <img src="utils/images/equipe/equipe-03.jfif" alt="Equipe multidisciplinar da Clínica Estímulos em atuação integrada" class="about-image" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="about-carousel-slide" data-about-topic="2">
+            <img src="utils/resultados/certificado.jfif" alt="Registro de resultado em acompanhamento psicopedagogico" class="about-image" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="about-carousel-slide" data-about-topic="2">
+            <button type="button" class="about-video-thumb" data-open-video-modal data-video-src="utils/resultados/resultados.mp4" data-video-title="Vídeo de resultados" aria-label="Abrir vídeo de resultados em tela ampliada">
+              <video class="about-video about-video-poster" muted playsinline preload="metadata">
+                <source src="utils/resultados/resultados.mp4" type="video/mp4" />
+              </video>
+              <span class="about-video-thumb-overlay" aria-hidden="true">
+                <span class="about-video-play-icon"></span>
+                <span class="about-video-thumb-label">Assistir vídeo</span>
+              </span>
+            </button>
+          </figure>
+          <button type="button" class="about-media-nav about-media-prev" aria-label="Mídia anterior da seção Sobre">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </button>
+          <button type="button" class="about-media-nav about-media-next" aria-label="Próxima mídia da seção Sobre">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </button>
+          <div class="about-media-dots" aria-label="Navegação de mídia do tópico ativo"></div>
         </div>
         <div class="about-copy">
           <span>Sobre Nós</span>
@@ -118,11 +161,130 @@
             desenvolvimento global da criança e do adolescente. Atendemos com ética, carinho e
             compromisso, sempre respeitando a individualidade de cada paciente e família.
           </p>
-          <div class="feature-grid">
-            <article class="feature-card"><div class="feature-icon blue-soft"><svg viewBox="0 0 64 64" role="img"><path d="M51.4 34.2c-1.6-1.6-3.7-2.4-5.8-2.4-1.5 0-2.9.4-4.2 1.1a10.6 10.6 0 0 0-18.8-5.8 8.4 8.4 0 0 0-12.1 7.5c0 3 1.6 5.8 4.1 7.3l10.3 6.1a13.7 13.7 0 0 0 14 0l10.3-6.1a8.4 8.4 0 0 0 4.1-7.3c0-1.8-.7-3.4-1.9-4.4Zm-3.6 5.3-10.3 6.1a10.8 10.8 0 0 1-11 0l-10.3-6.1a5.4 5.4 0 0 1 4.1-9.9l2.1.8.9-2.1a7.7 7.7 0 0 1 14.5 4.1l-.4 1.9 1.9-.2a5.4 5.4 0 0 1 8.5 5.4Z" /></svg></div><div><h3>Atendimento Humanizado</h3><p>Acolhimento e escuta ativa para cada família.</p></div></article>
-            <article class="feature-card"><div class="feature-icon green-soft"><svg viewBox="0 0 64 64" role="img"><path d="M32 8.8 39 23l15.7 2.3-11.3 11 2.7 15.6L32 44.6 17.9 52l2.7-15.6-11.3-11L25 23l7-14.2Zm0 6.8-4.7 9.5-10.5 1.5 7.6 7.4-1.8 10.4 9.4-4.9 9.4 4.9-1.8-10.4 7.6-7.4-10.5-1.5-4.7-9.5Z" /></svg></div><div><h3>Equipe Multidisciplinar</h3><p>Profissionais especializados e em constante atualização.</p></div></article>
-            <article class="feature-card"><div class="feature-icon lilac-soft"><svg viewBox="0 0 64 64" role="img"><path d="M50 47.5H14a1.5 1.5 0 0 1 0-3h36a1.5 1.5 0 0 1 0 3ZM17 41a1.5 1.5 0 0 1-1.5-1.5V24a1.5 1.5 0 0 1 3 0v15.5A1.5 1.5 0 0 1 17 41Zm15 0a1.5 1.5 0 0 1-1.5-1.5V16a1.5 1.5 0 0 1 3 0v23.5A1.5 1.5 0 0 1 32 41Zm15 0a1.5 1.5 0 0 1-1.5-1.5V30a1.5 1.5 0 0 1 3 0v9.5A1.5 1.5 0 0 1 47 41Zm-7.7-17.8a1.5 1.5 0 0 1-1.2-2.4l4.8-6.3a1.5 1.5 0 0 1 2.2-.2l4.5 4.2 5.4-7.6a1.5 1.5 0 1 1 2.4 1.7L51 21.3a1.5 1.5 0 0 1-2.2.2l-4.6-4.2-3.7 4.9a1.5 1.5 0 0 1-1.2.6Z" /></svg></div><div><h3>Foco em Resultados</h3><p>Planos terapêuticos individualizados e eficazes.</p></div></article>
+
+          <div class="feature-grid" role="tablist" aria-label="Topicos sobre a clinica">
+            <article class="feature-card active" data-about-topic-tab="0" role="button" tabindex="0" aria-pressed="true">
+              <div class="feature-icon blue-soft"><svg viewBox="0 0 64 64" role="img"><path d="M51.4 34.2c-1.6-1.6-3.7-2.4-5.8-2.4-1.5 0-2.9.4-4.2 1.1a10.6 10.6 0 0 0-18.8-5.8 8.4 8.4 0 0 0-12.1 7.5c0 3 1.6 5.8 4.1 7.3l10.3 6.1a13.7 13.7 0 0 0 14 0l10.3-6.1a8.4 8.4 0 0 0 4.1-7.3c0-1.8-.7-3.4-1.9-4.4Zm-3.6 5.3-10.3 6.1a10.8 10.8 0 0 1-11 0l-10.3-6.1a5.4 5.4 0 0 1 4.1-9.9l2.1.8.9-2.1a7.7 7.7 0 0 1 14.5 4.1l-.4 1.9 1.9-.2a5.4 5.4 0 0 1 8.5 5.4Z" /></svg></div>
+              <div>
+                <h3>Atendimento Humanizado</h3>
+                <p>Acolhimento e escuta ativa para cada familia.</p>
+              </div>
+            </article>
+            <article class="feature-card" data-about-topic-tab="1" role="button" tabindex="0" aria-pressed="false">
+              <div class="feature-icon green-soft"><svg viewBox="0 0 64 64" role="img"><path d="M32 8.8 39 23l15.7 2.3-11.3 11 2.7 15.6L32 44.6 17.9 52l2.7-15.6-11.3-11L25 23l7-14.2Zm0 6.8-4.7 9.5-10.5 1.5 7.6 7.4-1.8 10.4 9.4-4.9 9.4 4.9-1.8-10.4 7.6-7.4-10.5-1.5-4.7-9.5Z" /></svg></div>
+              <div>
+                <h3>Equipe <span class="no-break">Multidisciplinar</span></h3>
+                <p>Especialistas integrados para um cuidado completo.</p>
+              </div>
+            </article>
+            <article class="feature-card" data-about-topic-tab="2" role="button" tabindex="0" aria-pressed="false">
+              <div class="feature-icon lilac-soft"><svg viewBox="0 0 64 64" role="img"><path d="M50 47.5H14a1.5 1.5 0 0 1 0-3h36a1.5 1.5 0 0 1 0 3ZM17 41a1.5 1.5 0 0 1-1.5-1.5V24a1.5 1.5 0 0 1 3 0v15.5A1.5 1.5 0 0 1 17 41Zm15 0a1.5 1.5 0 0 1-1.5-1.5V16a1.5 1.5 0 0 1 3 0v23.5A1.5 1.5 0 0 1 32 41Zm15 0a1.5 1.5 0 0 1-1.5-1.5V30a1.5 1.5 0 0 1 3 0v9.5A1.5 1.5 0 0 1 47 41Zm-7.7-17.8a1.5 1.5 0 0 1-1.2-2.4l4.8-6.3a1.5 1.5 0 0 1 2.2-.2l4.5 4.2 5.4-7.6a1.5 1.5 0 1 1 2.4 1.7L51 21.3a1.5 1.5 0 0 1-2.2.2l-4.6-4.2-3.7 4.9a1.5 1.5 0 0 1-1.2.6Z" /></svg></div>
+              <div>
+                <h3>Foco em Resultados</h3>
+                <p>Evolucao real com intervenção individualizada.</p>
+              </div>
+            </article>
           </div>
+
+          <div class="about-topic-panels" id="about-topic-panels" aria-live="polite">
+            <article class="about-topic-panel active" data-about-topic-panel="0">
+              <h3>Atendimento humanizado com criterio tecnico</h3>
+              <p>
+                Cada familia recebe um plano claro, com linguagem acessivel e objetivos terapeuticos definidos.
+                Cuidamos do vinculo, da escuta e da evolucao em cada etapa do acompanhamento.
+              </p>
+            </article>
+
+            <article class="about-topic-panel" data-about-topic-panel="1">
+              <h3>Equipe multidisciplinar, conduta integrada</h3>
+              <p>
+                Psicopedagogia, psicologia, neuropsicologia e terapias complementares trabalham em conjunto,
+                com troca tecnica entre profissionais e foco no desenvolvimento global da crianca.
+              </p>
+            </article>
+
+            <article class="about-topic-panel" data-about-topic-panel="2">
+              <h3>Estudo de caso: evolucao na leitura em Bauru</h3>
+              <p>
+                Neste caso, vimos melhora consistente na leitura com acompanhamento psicopedagogico
+                estruturado, participacao da familia e metas claras. O processo foi individualizado,
+                respeitando o tempo da crianca e fortalecendo sua seguranca para aprender.
+              </p>
+              <button type="button" class="about-case-trigger" data-open-case-modal>Ler estudo de caso completo</button>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-case-modal" id="about-case-modal" hidden>
+        <div class="about-case-backdrop" data-close-case-modal="true"></div>
+        <div class="about-case-dialog" role="dialog" aria-modal="true" aria-labelledby="about-case-title">
+          <button type="button" class="about-case-close" aria-label="Fechar estudo de caso" data-close-case-modal="true">Fechar</button>
+
+          <h3 id="about-case-title">Estudo de Caso: Evolucao na Leitura com Intervencao Psicopedagogica em Bauru</h3>
+
+          <p>
+            Nem toda dificuldade de leitura significa falta de esforco. Muitas vezes, a crianca quer aprender,
+            mas precisa de estrategia, direcionamento e intervenção adequada.
+          </p>
+
+          <p>
+            Neste caso, observamos evolucao significativa na leitura apos acompanhamento psicopedagogico
+            estruturado.
+          </p>
+
+          <h4>O que fez diferenca</h4>
+          <ul class="about-case-list">
+            <li>Familia parceira e participativa</li>
+            <li>Crianca empenhada e acolhida em suas dificuldades</li>
+            <li>Terapias em dia, com objetivos claros</li>
+            <li>Intervencao baseada em evidencias cientificas</li>
+          </ul>
+
+          <p>
+            Resultado observado: evolucao consistente na fluencia e maior seguranca na leitura.
+          </p>
+
+          <h4>O que investigamos na avaliacao</h4>
+          <ul class="about-case-list">
+            <li>Processamento cognitivo</li>
+            <li>Consciencia fonologica</li>
+            <li>Memoria e atencao</li>
+            <li>Estrategias de aprendizagem</li>
+            <li>Aspectos emocionais envolvidos</li>
+          </ul>
+
+          <p>
+            Quando a intervencao e individualizada e fundamentada, a evolucao acontece de forma solida,
+            respeitando o tempo da crianca.
+          </p>
+
+          <h4>Sinais de atencao</h4>
+          <ul class="about-case-list">
+            <li>Dificuldade na leitura</li>
+            <li>Trocas de letras</li>
+            <li>Lentidao para ler</li>
+            <li>Resistencia as tarefas escolares</li>
+            <li>Suspeita de dislexia ou transtorno de aprendizagem</li>
+          </ul>
+
+          <p>
+            Sou Veronica Bulgarelli, Psicopedagoga e Neuropsicopedagoga na Clinica Estimulos Bauru,
+            com atuacao em avaliacao e intervencao nas dificuldades de aprendizagem.
+          </p>
+
+          <a href="https://wa.me/5514988089163" class="btn-primary about-case-cta" target="_blank" rel="noreferrer">Agendar pelo WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="about-video-modal" id="about-video-modal" hidden>
+        <div class="about-case-backdrop" data-close-video-modal="true"></div>
+        <div class="about-video-dialog" role="dialog" aria-modal="true" aria-labelledby="about-video-title">
+          <button type="button" class="about-case-close" aria-label="Fechar vídeo" data-close-video-modal="true">Fechar</button>
+          <h3 id="about-video-title">Vídeo de resultados</h3>
+          <video class="about-video-full" controls playsinline preload="metadata">
+            <source src="" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>
@@ -546,7 +708,7 @@
 
   <footer id="contato" class="site-footer">
     <div class="container footer-grid">
-      <div class="footer-brand"><img src="images/logo.png" alt="Clínica Estímulos" class="logo footer-logo" /></div>
+      <div class="footer-brand"><img src="utils/images/logo.png" alt="Clínica Estímulos" class="logo footer-logo" /></div>
       <div><h3>Contato</h3><ul class="footer-list"><li>(14) 98808-9163</li><li>@clinica_estimulos</li><li>Bauru - SP</li></ul></div>
       <div><h3>Links Rápidos</h3><ul class="footer-list footer-links"><li><a href="#home">Início</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="equipe.html">Nossa Equipe</a></li><li><a href="nosso-espaco.html">Nosso Espaço</a></li><li><a href="#contato">Contato</a></li></ul></div>
       <div>
