@@ -1121,6 +1121,156 @@ section[id] {
   }
 }
 
+/* Google Reviews Section */
+.reviews-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--blue-soft);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px 32px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.reviews-score {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.reviews-score-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1;
+}
+
+.reviews-stars {
+  display: flex;
+  gap: 3px;
+}
+
+.reviews-stars svg,
+.review-stars svg {
+  width: 22px;
+  height: 22px;
+  fill: #f5a623;
+}
+
+.review-stars svg {
+  width: 16px;
+  height: 16px;
+}
+
+.reviews-total {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.reviews-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.reviews-cta:hover {
+  background: var(--blue-dark);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px 20px 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+.review-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.review-author {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.review-google-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-top: 2px;
+}
+
+.review-text {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 980px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews-summary {
+    padding: 18px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Nosso Espaco Page Styles */
 .space-gallery {
   padding-top: 0;
